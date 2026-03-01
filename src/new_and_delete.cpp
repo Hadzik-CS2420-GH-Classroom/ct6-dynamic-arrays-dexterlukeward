@@ -25,8 +25,7 @@ void newAndDelete() {
     //       Store the result in int* called 'heapArray'
     //       Hint: int* heapArray = new int[size];
 
-	new int[size];
-	int* heapArray = new int[size];
+    int* heapArray = new int[size];
     
     //
     // ! DISCUSSION: What does 'new int[size]' actually do?
@@ -52,19 +51,14 @@ void newAndDelete() {
 
     for (int i = 0; i < size; ++i) {
         heapArray[i] = (i + 1) * 10;
-	}
+    }
 
     // TODO: Print all elements of the heap array using a for loop
     // Expected output: "Heap array: 10 20 30 40 50"
-
-	for (int i = 0; i < size; ++i) {
-        std::cout << heapArray[i] << ' ';
-	}
-
     std::cout << "Heap array: ";
-
-    // your loop here
-
+    for (int i = 0; i < size; ++i) {
+        std::cout << heapArray[i] << ' ';
+    }
     std::cout << '\n';
 
     // --- 2. Freeing arrays with delete[] ---
