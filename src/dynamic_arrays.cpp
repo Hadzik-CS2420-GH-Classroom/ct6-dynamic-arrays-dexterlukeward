@@ -123,6 +123,7 @@ void dynamicArrays() {
     // Expected output: "New capacity: 8"
 
 	int newCapacity = capacity * 2;
+	std::cout << "New capacity: " << newCapacity << '\n';
 
     // Step 2: Allocate a new, bigger array
     // TODO: Allocate a new array of 'newCapacity' ints
@@ -147,6 +148,10 @@ void dynamicArrays() {
 
     // Step 4: Delete the old array
     // TODO: delete[] the old array (arr)
+
+	delete[] arr;
+    
+    
     //
     // ! DISCUSSION: Why must we delete the OLD array?
     //   We allocated it with new[], so we own that memory. The new
